@@ -40,7 +40,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .blog-wrapper {
   display: flex;
   flex-direction: column;
@@ -99,7 +99,7 @@ export default {
       }
 
       .link {
-        display: inline;
+        display: inline-flex;
         align-items: center;
         margin-top: 32px;
         padding-bottom: 4px;
@@ -129,7 +129,7 @@ export default {
     }
 
     @media(min-width: 800px) {
-      order: 4;
+      flex: 4;
     }
 
     img {
@@ -151,7 +151,9 @@ export default {
 }
 
 .no-user:first-child {
-  background-color: #303030;
-  color: #fff;
+  .blog-content {
+    background-color: #303030;
+    color: #fff;
+  }
 }
 </style>
